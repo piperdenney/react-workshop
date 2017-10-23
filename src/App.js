@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -15,7 +16,7 @@ class App extends Component {
       <div className='page'>
         <div className='container-fluid top-padding'>
           <div className='col-md-2'>
-            <ProfileCard />
+            <ProfileCard name= 'Piper Denney' />
           </div>
           <div className='col-md-8'>
             <Content />
