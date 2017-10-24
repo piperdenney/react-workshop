@@ -1,14 +1,19 @@
-
 import React, {Component} from 'react'
 import Blurb from './Blurb'
 import Stats from './Stats'
+import About from './About'
+import Contact from './Contact'
+import Home from './Home'
 
 class Content extends Component {
   render(){
+    let page = {
+      'about': <About />,
+      'home': <Home />,
+      'contact': <Contact />
+    }
     return(<div>
-      <h2>Home</h2>
-      <Stats location='Seattle' color='Certain shades of blue' sign='Capricorn, scorpio rising, libra moon' />
-      <Blurb />
+      {page[this.props.currentPage]}
       </div>)
   }
 }
